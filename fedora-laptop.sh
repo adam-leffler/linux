@@ -58,7 +58,6 @@ sudo dnf install -y gnome-terminal nautilus gnome-control-center gparted
 sudo dnf install -y gnome-text-editor xed vi vim nano
 sudo dnf install -y fastfetch htop
 sudo dnf install -y gvfs udisks2 tar
-sudo dnf install -y timeshift
 
 # Customization
 sudo dnf install -y gnome-extensions-app gnome-browser-connector gnome-tweaks
