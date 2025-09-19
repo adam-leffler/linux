@@ -73,7 +73,7 @@ sudo dnf install -y firefox chromium google-chrome-stable torbrowser-launcher ic
 sudo dnf install -y discord signal-desktop
 
 # Office 
-sudo dnf install -y libreoffice gnome-calculator
+sudo dnf install -y libreoffice gnome-calculator atril
 
 # Development
 sudo dnf install -y make gcc g++ gcc-c++ nasm
