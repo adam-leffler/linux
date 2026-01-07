@@ -73,12 +73,12 @@ sudo dnf install -y firefox chromium google-chrome-stable torbrowser-launcher ic
 sudo dnf install -y discord signal-desktop
 
 # Office 
-sudo dnf install -y libreoffice gnome-calculator atril
+sudo dnf install -y libreoffice gnome-calculator atril krita
 
 # Development
 sudo dnf install -y make gcc g++ gcc-c++ nasm
 sudo dnf install -y git 
-sudo dnf install -y python3 python3-devel python3-pip
+sudo dnf install -y python3 python3-devel python3-pip jupyter nodejs
 
 # Media and graphics
 sudo dnf install -y vlc eog 
@@ -86,13 +86,13 @@ sudo dnf install -y video-downloader
 sudo dnf install -y ffmpeg gimp obs-studio kdenlive blender
 
 # Virtualization
-sudo dnf install -y kernel-devel-$(uname -r) 
-sudo dnf install -y kernel-headers
-sudo dnf install -y qemu qemu-kvm libvirt virt-manager
-sudo dnf install -y VirtualBox akmod-VirtualBox 
-sudo systemctl start vboxdrv.service
-sudo systemctl enable vboxdrv.service
-sudo usermod -a -G vboxusers $USER
+#sudo dnf install -y kernel-devel-$(uname -r) 
+#sudo dnf install -y kernel-headers
+#sudo dnf install -y qemu qemu-kvm libvirt virt-manager
+#sudo dnf install -y VirtualBox akmod-VirtualBox 
+#sudo systemctl start vboxdrv.service
+#sudo systemctl enable vboxdrv.service
+#sudo usermod -a -G vboxusers $USER
 
 
 
