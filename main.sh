@@ -29,7 +29,7 @@ bash "$SCRIPT_DIR/modules/repositories.sh"
 bash "$SCRIPT_DIR/modules/build.sh"
 
 # Nvidia drivers and kernel modules
-bash "$SCRIPT_DIR/modules/nvidia.sh"
+#bash "$SCRIPT_DIR/modules/nvidia.sh"
 
 # Display server and desktop environment
 bash "$SCRIPT_DIR/modules/graphical.sh"
@@ -41,7 +41,7 @@ bash "$SCRIPT_DIR/modules/basic.sh"
 bash "$SCRIPT_DIR/modules/development.sh"
 
 # Virtualization
-bash "$SCRIPT_DIR/modules/virtualization.sh"
+#bash "$SCRIPT_DIR/modules/virtualization.sh"
 
 # Productive software
 bash "$SCRIPT_DIR/modules/office.sh"
