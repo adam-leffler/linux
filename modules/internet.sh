@@ -18,8 +18,8 @@ PACKAGES=(
     qutebrowser             # QuteBrowser
 
     # Messaging
-    discord                 # Discord
-    signal-desktop          # Signal Messenger
+    #discord                 # Discord
+    #signal-desktop          # Signal Messenger
 )
 
 sudo dnf install -y "${PACKAGES[@]}"
