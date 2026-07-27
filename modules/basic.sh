@@ -10,7 +10,7 @@ PACKAGES=(
     tar                     # Compression
 
     # Basic utilities
-    gnome-terminal          # Terminal
+    ptyxis                  # Terminal
     nautilus                # File manager
     gnome-control-center    # Settings app
     gparted                 # Disk manager
