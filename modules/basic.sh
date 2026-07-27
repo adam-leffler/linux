@@ -57,7 +57,7 @@ RestartSec=10
 WantedBy=default.target
 EOF
 
-chown -R "$TARGET_USER:$TARGET_USER" "$USER_HOME/Cloud" "$USER_HOME/.config/systemd"
+chown "$TARGET_USER:$TARGET_USER" "$USER_HOME/.config/systemd/user/rclone-gdrive.service"
 
 sudo -u "$TARGET_USER" XDG_RUNTIME_DIR="/run/user/$TARGET_UID" systemctl --user daemon-reload
 sudo -u "$TARGET_USER" XDG_RUNTIME_DIR="/run/user/$TARGET_UID" systemctl --user enable rclone-gdrive.service
@@ -66,7 +66,6 @@ sudo -u "$TARGET_USER" XDG_RUNTIME_DIR="/run/user/$TARGET_UID" systemctl --user 
 
 # Configuration of Fastfetch
 
-fastfetch --gen-config
 cat << 'EOF' > "$USER_HOME/.config/fastfetch/config.jsonc"
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
@@ -90,4 +89,9 @@ EOF
 
 chown -R "$TARGET_USER:$TARGET_USER" "$USER_HOME/.config/fastfetch"
 
-echo "fastfetch" >> .bashrc
+BASHRC="$USER_HOME/.bashrc"
+
+if [ -f "$BASHRC" ] && ! grep -qxF "fastfetch" "$BASHRC"; then
+    echo "" >> "$BASHRC"
+    echo "fastfetch" >> "$BASHRC"
+fi
