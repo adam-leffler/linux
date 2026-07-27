@@ -14,6 +14,7 @@ PACKAGES=(
     nautilus                # File manager
     gnome-control-center    # Settings app
     gparted                 # Disk manager
+    rclone                  # Cloud connectivity
     fastfetch               # Terminal utility
     htop                    # Task manager
 
