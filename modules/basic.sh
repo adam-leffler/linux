@@ -66,6 +66,8 @@ sudo -u "$TARGET_USER" XDG_RUNTIME_DIR="/run/user/$TARGET_UID" systemctl --user 
 
 # Configuration of Fastfetch
 
+fastfetch --gen-config-force
+
 cat << 'EOF' > "$USER_HOME/.config/fastfetch/config.jsonc"
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
